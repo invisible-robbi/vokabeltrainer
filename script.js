@@ -1,4 +1,4 @@
-let dictionary = JSON.parse(onlineStorage.getItem('dictionary')) || {};
+let dictionary = JSON.parse(meetingStorage.getItem('dictionary')) || {};
 let randomGermanWord;
 
 function addVocabulary() {
@@ -7,7 +7,7 @@ function addVocabulary() {
     germanText.value = '';
     englishText.value = '';
 
-    onlineStorage.setItem('dictionary', JSON.stringify(dictionary));
+    meetingStorage.setItem('dictionary', JSON.stringify(dictionary));
     render();
 }
 
